@@ -1,0 +1,112 @@
+[gd_scene load_steps=11 format=3 uid="uid://dvvegpinm0c2g"]
+
+[ext_resource type="Texture2D" uid="uid://dkdxk0wy2isjf" path="res://media/rect_mid_trans.png" id="1_oh8lq"]
+[ext_resource type="FontFile" uid="uid://b5ihc47u8wl7b" path="res://media/LXGWWenKai-Regular.ttf" id="2_u5o47"]
+[ext_resource type="Texture2D" uid="uid://cu8i3l4fbg211" path="res://icons/circle-info-solid.svg" id="3_vwa0n"]
+[ext_resource type="Theme" uid="uid://dysv2fg83evxr" path="res://scenes/new_theme.tres" id="3_xn7cx"]
+[ext_resource type="Texture2D" uid="uid://ogs56tjfhhve" path="res://media/rect_dark_trans.png" id="5_d8u64"]
+
+[sub_resource type="Theme" id="Theme_8qirk"]
+default_font_size = 80
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ypmp6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rpspx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vnin7"]
+font = ExtResource("2_u5o47")
+font_size = 144
+
+[sub_resource type="LabelSettings" id="LabelSettings_0k7k5"]
+font = ExtResource("2_u5o47")
+font_size = 32
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_8qirk")
+
+[node name="RectDark" type="Sprite2D" parent="."]
+position = Vector2(70, 630)
+rotation = -1.19304
+scale = Vector2(0.771646, 0.771646)
+texture = ExtResource("1_oh8lq")
+
+[node name="start_game_from_previous_archival" type="Button" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 516.0
+offset_right = 479.0
+offset_bottom = 687.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ypmp6")
+text = "书接上回"
+
+[node name="gallery" type="Button" parent="."]
+layout_mode = 0
+offset_top = 688.0
+offset_right = 414.0
+offset_bottom = 856.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rpspx")
+text = "画廊"
+
+[node name="start_game_from_begining" type="Button" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 343.0
+offset_right = 479.0
+offset_bottom = 512.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rpspx")
+text = "故事伊始"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 120.0
+offset_right = 496.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 90
+text = "海上花"
+label_settings = SubResource("LabelSettings_vnin7")
+
+[node name="InfoButton" type="Button" parent="."]
+custom_minimum_size = Vector2(52, 52)
+layout_mode = 0
+offset_left = 1728.0
+offset_top = 928.0
+offset_right = 1780.0
+offset_bottom = 980.0
+theme = ExtResource("3_xn7cx")
+icon = ExtResource("3_vwa0n")
+expand_icon = true
+
+[node name="RectDarkTrans" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1285.89, 780.5)
+scale = Vector2(0.435185, 0.375)
+texture = ExtResource("5_d8u64")
+
+[node name="Info" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.468
+anchor_top = 0.57
+anchor_right = 0.883
+anchor_bottom = 0.881
+offset_left = 0.439953
+offset_top = 0.399943
+offset_right = 0.639969
+offset_bottom = 0.520016
+text = "游戏快捷键说明：
+ESC：退出并返回到主菜单
+鼠标左键：游戏内前进一步
+鼠标右键：游戏内后退一步
+
+关于：
+本游戏是暑期课程《C++程序设计实践》的大作业项目。
+由本小组四人合作完成。"
+label_settings = SubResource("LabelSettings_0k7k5")

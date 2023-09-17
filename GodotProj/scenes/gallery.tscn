@@ -1,0 +1,401 @@
+[gd_scene load_steps=29 format=3 uid="uid://c52b517jr1i68"]
+
+[ext_resource type="LabelSettings" uid="uid://ddu0nvsf86e7b" path="res://scenes/new_label_settings.tres" id="1_pxbjy"]
+[ext_resource type="Texture2D" uid="uid://ogs56tjfhhve" path="res://media/rect_dark_trans.png" id="2_6cupa"]
+[ext_resource type="Texture2D" uid="uid://dsm5jw8xjityj" path="res://media/bar_overview.jpg" id="3_1uc7e"]
+[ext_resource type="Texture2D" uid="uid://cvt7tyq067xae" path="res://media/rect_light_trans.png" id="3_umdmr"]
+[ext_resource type="FontFile" uid="uid://b5ihc47u8wl7b" path="res://media/LXGWWenKai-Regular.ttf" id="4_spvos"]
+[ext_resource type="Texture2D" uid="uid://ugt3ewl0toje" path="res://media/ruyi_jp_patron.jpg" id="5_sx3c0"]
+[ext_resource type="Texture2D" uid="uid://bovaftrevdr6i" path="res://media/xincheng_waking_up.jpg" id="6_pwdyi"]
+[ext_resource type="Texture2D" uid="uid://c4sqwlqhsxkut" path="res://media/ling_in_the_bar_2.jpg" id="6_xrg7k"]
+[ext_resource type="Texture2D" uid="uid://cmvl4xnbxmph5" path="res://media/bar_inside_2.jpg" id="7_lqw8u"]
+[ext_resource type="Texture2D" uid="uid://cgqy60lwp10be" path="res://media/xincheng_reading.jpeg" id="7_o5jj7"]
+[ext_resource type="Texture2D" uid="uid://bpjtm2wnrpl4f" path="res://media/bar_inside_clear.jpg" id="9_urf2e"]
+[ext_resource type="Texture2D" uid="uid://ctvccb3mmtha2" path="res://media/bar_inside_4.jpg" id="10_g2k45"]
+[ext_resource type="Texture2D" uid="uid://xl4r4eb42m6u" path="res://media/xincheng_flute.jpg" id="11_n6e2l"]
+[ext_resource type="Texture2D" uid="uid://cu6bmkvu75bov" path="res://media/bar_inside_3.jpg" id="13_yblep"]
+[ext_resource type="Texture2D" uid="uid://chwtctmi6jhuv" path="res://media/ling_in_the_bar.jpg" id="14_o6omt"]
+[ext_resource type="Texture2D" uid="uid://dxuygvl6qwgh3" path="res://media/xincheng_ling_hugging_crying.jpeg" id="16_ri1ds"]
+[ext_resource type="Texture2D" uid="uid://d111gmwmoi0x7" path="res://media/bar_inside_5.jpg" id="16_rtvpy"]
+[ext_resource type="Texture2D" uid="uid://b2bti7l1jfmw8" path="res://media/jp_offier_dies_on_the_street.jpg" id="17_a04cw"]
+[ext_resource type="Texture2D" uid="uid://c0mpbhwu8d5g0" path="res://media/bar_inside_6.jpeg" id="18_ekj82"]
+[ext_resource type="Texture2D" uid="uid://be51f216i37j5" path="res://media/bar_inside_1.jpg" id="18_frffu"]
+[ext_resource type="Texture2D" uid="uid://df2x8sarqs2eu" path="res://media/bedroom.jpg" id="19_iqcvo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4i7ix"]
+font = ExtResource("4_spvos")
+font_size = 42
+
+[sub_resource type="LabelSettings" id="LabelSettings_0cruf"]
+font = ExtResource("4_spvos")
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_ayw1n"]
+font = ExtResource("4_spvos")
+font_size = 32
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_woan3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_peqa3"]
+bg_color = Color(0.760784, 0.760784, 0.760784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0eeag"]
+bg_color = Color(0.545098, 0.545098, 0.545098, 0)
+
+[sub_resource type="Theme" id="Theme_iklka"]
+Button/styles/focus = SubResource("StyleBoxFlat_woan3")
+Button/styles/hover = SubResource("StyleBoxFlat_peqa3")
+Button/styles/normal = SubResource("StyleBoxFlat_0eeag")
+
+[node name="Gallery" type="Gallery"]
+custom_minimum_size = Vector2(1920, 1080)
+
+[node name="BKGR" type="Sprite2D" parent="."]
+position = Vector2(2879, 1130)
+texture = ExtResource("2_6cupa")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(1392, 860)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.24
+anchor_top = 0.214
+anchor_right = 0.965
+anchor_bottom = 1.0
+offset_left = 1563.2
+offset_top = 448.88
+offset_right = 1563.2
+offset_bottom = 460.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="CPT_1" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollContainer/VBoxContainer/CPT_1"]
+position = Vector2(176, 113)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_1uc7e")
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CPT_1"]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 36.0
+offset_right = 483.0
+offset_bottom = 89.0
+text = "章节零"
+label_settings = SubResource("LabelSettings_4i7ix")
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/CPT_1"]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 101.0
+offset_right = 1220.0
+offset_bottom = 143.0
+text = "「海上花」是一间生意繁荣的酒馆，
+其中每一天的日常便是……"
+label_settings = SubResource("LabelSettings_0cruf")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="GalleryButton" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+corresponding_img_name = &"xincheng_waking_up"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("6_pwdyi")
+expand_icon = true
+
+[node name="GalleryButton2" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+corresponding_img_name = &"xincheng_reading"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("7_o5jj7")
+expand_icon = true
+
+[node name="GalleryButton3" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+corresponding_img_name = &"bar_overview"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("3_1uc7e")
+expand_icon = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="GalleryButton" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer2"]
+corresponding_img_name = &"bar_inside_2"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("7_lqw8u")
+expand_icon = true
+
+[node name="CPT_2" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollContainer/VBoxContainer/CPT_2"]
+position = Vector2(176, 113)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_sx3c0")
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CPT_2"]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 36.0
+offset_right = 483.0
+offset_bottom = 89.0
+text = "章节壹"
+label_settings = SubResource("LabelSettings_4i7ix")
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/CPT_2"]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 101.0
+offset_right = 1220.0
+offset_bottom = 143.0
+text = "某一天酒馆正在筹备之时，前来了一位奇怪的客人"
+label_settings = SubResource("LabelSettings_0cruf")
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="GalleryButton" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer3"]
+corresponding_img_name = &"bar_inside_clear"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("9_urf2e")
+expand_icon = true
+
+[node name="GalleryButton2" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer3"]
+corresponding_img_name = &"bar_inside_4"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("10_g2k45")
+expand_icon = true
+
+[node name="GalleryButton3" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer3"]
+corresponding_img_name = &"ruyi_jp_patron"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("5_sx3c0")
+expand_icon = true
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="GalleryButton" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer4"]
+corresponding_img_name = &"xincheng_flute"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("11_n6e2l")
+expand_icon = true
+
+[node name="CPT_3" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollContainer/VBoxContainer/CPT_3"]
+position = Vector2(176, 113)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_xrg7k")
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CPT_3"]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 36.0
+offset_right = 483.0
+offset_bottom = 89.0
+text = "章节贰"
+label_settings = SubResource("LabelSettings_4i7ix")
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/CPT_3"]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 101.0
+offset_right = 1220.0
+offset_bottom = 143.0
+text = "在那之后的第二天，
+林心诚正在等待着马灵再次来到「海上花」。"
+label_settings = SubResource("LabelSettings_0cruf")
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="GalleryButton" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer5"]
+corresponding_img_name = &"bar_inside_3"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("13_yblep")
+expand_icon = true
+
+[node name="GalleryButton2" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer5"]
+corresponding_img_name = &"ling_in_the_bar"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("14_o6omt")
+expand_icon = true
+
+[node name="GalleryButton3" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer5"]
+corresponding_img_name = &"bar_inside_5"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("16_rtvpy")
+expand_icon = true
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="GalleryButton1" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer6"]
+corresponding_img_name = &"ling_in_the_bar_2"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("6_xrg7k")
+expand_icon = true
+
+[node name="GalleryButton" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer6"]
+corresponding_img_name = &"xincheng_ling_hugging_crying"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("16_ri1ds")
+expand_icon = true
+
+[node name="CPT_4" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollContainer/VBoxContainer/CPT_4"]
+position = Vector2(176, 113)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("17_a04cw")
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/CPT_4"]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 36.0
+offset_right = 483.0
+offset_bottom = 89.0
+text = "章节叁"
+label_settings = SubResource("LabelSettings_4i7ix")
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/CPT_4"]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 101.0
+offset_right = 1220.0
+offset_bottom = 143.0
+text = "林心诚不愿满足现状，而向马灵问起他的真实身份。
+沉重的现实被揭露后，将是山雨欲来风满楼。"
+label_settings = SubResource("LabelSettings_0cruf")
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="GalleryButton3" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer7"]
+corresponding_img_name = &"bar_inside_1"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("18_frffu")
+expand_icon = true
+
+[node name="GalleryButton" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer7"]
+corresponding_img_name = &"officer_died_on_the_street"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("17_a04cw")
+expand_icon = true
+
+[node name="GalleryButton2" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer7"]
+corresponding_img_name = &"bedroom"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("19_iqcvo")
+expand_icon = true
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1320, 220)
+layout_mode = 2
+
+[node name="GalleryButton" type="GalleryButton" parent="ScrollContainer/VBoxContainer/HBoxContainer8"]
+corresponding_img_name = &"bar_inside_6"
+custom_minimum_size = Vector2(391, 220)
+layout_mode = 2
+icon = ExtResource("18_ekj82")
+expand_icon = true
+
+[node name="PreviewContainer" type="GalleryPreviewContainer" parent="."]
+visible = false
+layout_mode = 0
+
+[node name="PreviewImage" type="Sprite2D" parent="PreviewContainer"]
+
+[node name="Label" type="Label" parent="PreviewContainer"]
+layout_mode = 0
+offset_left = 1288.0
+offset_top = 1777.0
+offset_right = 1736.0
+offset_bottom = 1819.0
+text = "单击鼠标左键或右键以退出预览"
+label_settings = SubResource("LabelSettings_ayw1n")
+
+[node name="BKGL" type="Sprite2D" parent="."]
+position = Vector2(-236, 265)
+rotation = 1.5708
+scale = Vector2(0.444444, 0.444444)
+texture = ExtResource("2_6cupa")
+
+[node name="RectLightTrans" type="Sprite2D" parent="BKGL"]
+position = Vector2(-1527.75, 1658.26)
+rotation = -1.5708
+scale = Vector2(2.25, 2.25)
+texture = ExtResource("3_umdmr")
+
+[node name="ExitButton" type="Button" parent="BKGL/RectLightTrans"]
+anchors_preset = -1
+anchor_right = 0.066
+anchor_bottom = 0.117
+offset_left = 834.0
+offset_top = 414.0
+offset_right = 833.28
+offset_bottom = 413.64
+tooltip_text = "退出画廊"
+theme = SubResource("Theme_iklka")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -108.0
+offset_top = 198.0
+offset_right = -31.0
+offset_bottom = 403.0
+text = "场景"
+label_settings = ExtResource("1_pxbjy")
+autowrap_mode = 1
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 189.0
+offset_right = 25.0
+offset_bottom = 288.0
+rotation = 1.5708
+scale = Vector2(1, -1)
+text = "/"
+label_settings = ExtResource("1_pxbjy")
+
+[node name="Label2" type="Label" parent="Label"]
+layout_mode = 0
+offset_top = 216.0
+offset_right = 76.0
+offset_bottom = 410.0
+text = "画廊"
+label_settings = ExtResource("1_pxbjy")
+autowrap_mode = 1

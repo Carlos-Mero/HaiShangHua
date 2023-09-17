@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://ce17pu0vv7066"]
+
+[ext_resource type="FontFile" uid="uid://b5ihc47u8wl7b" path="res://media/LXGWWenKai-Regular.ttf" id="1_5348v"]
+
+[resource]
+font = ExtResource("1_5348v")
+font_size = 42

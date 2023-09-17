@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdgwj7b1vtcsw"]
+
+[ext_resource type="Texture2D" uid="uid://dkdxk0wy2isjf" path="res://media/rect_mid_trans.png" id="2_lrcuy"]
+[ext_resource type="LabelSettings" uid="uid://ce17pu0vv7066" path="res://scenes/game_play_dialog_label.tres" id="3_ga82v"]
+
+[node name="GamePlay" type="GamePlay"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RightChar" type="Sprite2D" parent="."]
+position = Vector2(1440, 590)
+scale = Vector2(0.8, 0.8)
+
+[node name="LeftChar" type="Sprite2D" parent="."]
+position = Vector2(424, 712)
+
+[node name="Dialog" type="Sprite2D" parent="."]
+position = Vector2(776, 1326)
+texture = ExtResource("2_lrcuy")
+
+[node name="Name" type="Label" parent="Dialog"]
+offset_left = -730.0
+offset_top = -504.0
+offset_right = -478.0
+offset_bottom = -441.0
+text = "【某人物】："
+label_settings = ExtResource("3_ga82v")
+language = "zh"
+
+[node name="Content" type="Label" parent="Dialog"]
+offset_left = -605.0
+offset_top = -436.0
+offset_right = 869.0
+offset_bottom = -247.0
+text = "1941年，上海。"
+label_settings = ExtResource("3_ga82v")
+autowrap_mode = 1
+language = "zh"
